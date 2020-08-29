@@ -30,6 +30,66 @@
           font-size: 3.5rem;
         }
       }
+
+
+
+
+
+.icon-control {
+    margin-top: 5px;
+    float: right;
+    font-size: 80%;
+}
+
+
+
+.btn-light {
+    background-color: #fff;
+    border-color: #e4e4e4;
+}
+
+.list-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.list-menu a {
+    color: #343a40;
+}
+
+.card-product-grid .info-wrap {
+    overflow: hidden;
+    padding: 18px 20px;
+}
+
+[class*='card-product'] a.title {
+    color: #212529;
+    display: block;
+}
+
+.card-product-grid:hover .btn-overlay {
+    opacity: 1;
+}
+.card-product-grid .btn-overlay {
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+.img-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
     </style>
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
@@ -51,9 +111,9 @@
                 Se connecter
             </a>
             <div class="dropdown-menu">
-            <a class="dropdown-item " href="connexion.html">Se connecter <i class="fa fa-sign-in"></i></a>
+            <a class="dropdown-item " href="login.html">Se connecter <i class="fa fa-sign-in"></i></a>
             <div class="dropdown-divider">Ou</div>
-            <a class="dropdown-item" href="inscription.html">S'inscrire</a>
+            <a class="dropdown-item" href="signIn.html">S'inscrire</a>
             <a class="dropdown-item" href="#">Votre compte</a>
             <a class="dropdown-item" href="#" style="color: #F47735;">Vos commandes</a>
 
@@ -62,14 +122,6 @@
     
   </div>
 </nav>
-
-
-
-
-
-
-
-
 
 
 
@@ -145,8 +197,384 @@
 
 
 
+<div class="col-md-10 mx-auto" >
+	<div class="row">
+	<aside class="col-md-3">
+		
+<div class="card">
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down icons"></i>
+				<h6 class="title icons">Catégories de produits</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show"  id="collapse_1" style="">
+			<div class="card-body">
+				<form class="pb-3">
+				<div class="input-group">
+				  <input type="text" class="form-control" placeholder="Search">
+				  <div class="input-group-append">
+				    <button class="btn btn-default mama1" type="button"><i class="fa fa-search"></i></button>
+				  </div>
+				</div>
+				</form>
+				
+				<ul class="list-menu">
+				<li><a href="#">Informatique </a></li>
+				<li><a href="#">Béauté et santé</a></li>
+				<li><a href="#">Cinéma  </a></li>
+				<li><a href="#">Jeux vidéo </a></li>
+				<li><a href="#">Chaussures et sacs</a></li>
+				<li><a href="#">Electroménager</a></li>
+				<li><a href="#">Vétements</a></li>
+				<li><a href="#">Toutes nos catégories</a></li>
+				<li><a href="#">Fripérie</a></li>
+				<li><a href="#">Accéssoires</a></li>
+				</ul>
 
-<div class="container">
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group  .// -->
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down icons"></i>
+				<h6 class="title icons">Marques</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse_2" style="">
+			<div class="card-body">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Gucci 
+				  	<b class="badge badge-pill badge-light float-right">120</b>  </div>
+				</label>
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Louis Vitton
+				  	<b class="badge badge-pill badge-light float-right">15</b>  </div>
+				</label>
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Mitsubishi 
+				  	<b class="badge badge-pill badge-light float-right">35</b> </div>
+				</label>
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Nissan 
+				  	<b class="badge badge-pill badge-light float-right">89</b> </div>
+				</label>
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" class="custom-control-input">
+				  <div class="custom-control-label">Honda 
+				  	<b class="badge badge-pill badge-light float-right">30</b>  </div>
+				</label>
+                
+	</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group .// -->
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down icons"></i>
+				<h6 class="title icons">Prix</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse_3" style="">
+			<div class="card-body">
+				<input type="range" class="custom-range" min="0" max="100" name="">
+				<div class="form-row">
+				<div class="form-group col-md-6">
+				  <label>Min</label>
+				  <input class="form-control" placeholder="$0" type="number">
+				</div>
+				<div class="form-group text-right col-md-6">
+				  <label>Max</label>
+				  <input class="form-control" placeholder="$1,0000" type="number">
+				</div>
+				</div> <!-- form-row.// -->
+				<button class="btn btn-block btn-default mama">Apply</button>
+			</div><!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group .// -->
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down icons"></i>
+				<h6 class="title icons">Taille</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse_4" style="">
+			<div class="card-body">
+			  <label class="checkbox-btn">
+			    <input type="checkbox">
+			    <span class="btn btn-light"> XS </span>
+			  </label>
+
+			  <label class="checkbox-btn">
+			    <input type="checkbox">
+			    <span class="btn btn-light"> SM </span>
+			  </label>
+
+			  <label class="checkbox-btn">
+			    <input type="checkbox">
+			    <span class="btn btn-light"> LG </span>
+			  </label>
+
+			  <label class="checkbox-btn">
+			    <input type="checkbox">
+			    <span class="btn btn-light"> XXL </span>
+			  </label>
+		</div><!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group .// -->
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" class="">
+				<i class="icon-control fa fa-chevron-down icons"></i>
+				<h6 class="title icons">Plus de filtre</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse in" id="collapse_5" style="">
+			<div class="card-body">
+				<label class="custom-control custom-radio">
+				  <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Tous les produits</div>
+				</label>
+
+				<label class="custom-control custom-radio">
+				  <input type="radio" name="myfilter_radio" class="custom-control-input">
+				  <div class="custom-control-label">Nouveaux produits</div>
+				</label>
+
+				<label class="custom-control custom-radio">
+				  <input type="radio" name="myfilter_radio" class="custom-control-input">
+				  <div class="custom-control-label">Les plus utilisés</div>
+				</label>
+
+				<label class="custom-control custom-radio">
+				  <input type="radio" name="myfilter_radio" class="custom-control-input">
+				  <div class="custom-control-label">Anciens produits</div>
+				</label>
+			</div><!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group .// -->
+</div> <!-- card.// -->
+
+	</aside>
+	<main class="col-md-9">
+
+<header class="border-bottom mb-4 pb-3">
+		<div class="form-inline">
+			<span class="mr-md-auto">32 Items found </span>
+			<select class="mr-2 form-control">
+				<option>Latest items</option>
+				<option>Trending</option>
+				<option>Most Popular</option>
+				<option>Cheapest</option>
+			</select>
+			<div class="btn-group">
+				<a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" title="" data-original-title="List view"> 
+					<i class="fa fa-bars"></i></a>
+				<a href="#" class="btn  btn-outline-secondary active" data-toggle="tooltip" title="" data-original-title="Grid view"> 
+					<i class="fa fa-th"></i></a>
+			</div>
+		</div>
+</header><!-- sect-heading -->
+
+<div class="row">
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+				<span class="badge badge-danger"> NEW </span>
+								<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Great item name goes here</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+						<del class="price-old">$1980</del>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+								<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+							<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+				<img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg" class="img-fluid">
+				<a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+			</div> <!-- img-wrap.// -->
+			<figcaption class="info-wrap">
+				<div class="fix-height">
+					<a href="#" class="title">Product name goes here just for demo item</a>
+					<div class="price-wrap mt-2">
+						<span class="price">$1280</span>
+					</div> <!-- price-wrap.// -->
+				</div>
+				<a href="#" class="btn btn-block btn btn-default mama">Add to cart </a>	
+			</figcaption>
+		</figure>
+	</div> <!-- col.// -->
+</div> <!-- row end.// -->
+
+
+<nav class="mt-4" aria-label="Page navigation sample">
+  <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+	</main>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Découvrez nos produits les plus demandés</h3>
     <div class="row">
        <div class="col-md-3 col-sm-6 mt-2">
@@ -401,7 +829,7 @@
 </div>
 <hr>
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3 mama col-md-12">Nos offres du jour <i class="fa fa-arrow-right"></i> </h3>
     
     <div class="row">
@@ -607,7 +1035,7 @@
 </div>
 <hr>
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Catégories 6 </h3>
     
     <div class="row">
@@ -776,7 +1204,7 @@
 <hr>
 
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Découvez nos catégories </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -943,7 +1371,7 @@
 </div>
 <hr>
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Découvez nos nouveau produits</h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -1066,7 +1494,7 @@
 
 
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Catégories 2 </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -1186,7 +1614,7 @@
 </div>
 <hr>
 
-<div class="container">
+<div class="col-md-10 mx-auto">
     <h3 class="h3">Les produits en solde</h3>
     <div class="row">
         <div class="col-md-4 col-sm-6">

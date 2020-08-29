@@ -31,6 +31,14 @@
     display: inline-block;
 }
 
+.mama1 {
+    background: #F47735;
+    font-size: 14px;
+    color: #FFF;
+    padding: 8px 32px;
+    display: inline-block;
+}
+
 #myCarousel .carousel-item a:hover {
     background: #394fa2;
     text-decoration: none;

@@ -1,0 +1,259 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Design de la page d'acceuil</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<link href="../css/listeProduitsComplet.css" rel="stylesheet">
+<link href="../css/ListeProduit2.css" rel="stylesheet" >
+<link href="../css/product.css" rel="stylesheet" >
+
+
+
+    <style>
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+   
+  .main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+            margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  h3 {
+    text-align: center;
+    line-height: 300%;
+  }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#" aria-label="Product">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="acceuilDesign.html">Acceuil <i class="fa fa-home"></i></a>
+    <a class="py-2 d-none d-md-inline-block " href="#">Nos produits <i class="fa fa-product-hunt"></i></a>
+    <a class="py-2 d-none d-md-inline-block" href="boutique.html">Nos boutiques </a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Panier <i class="fa fa-shopping-cart"></i></a>
+   
+    <div class="dropdown">
+        <div class="dropdown">
+            <a class="dropdown-toggle mama rounded-pill text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Se connecter
+            </a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item " href="login.html">Se connecter <i class="fa fa-sign-in"></i></a>
+            <div class="dropdown-divider">Ou</div>
+            <a class="dropdown-item" href="signIn.html">S'inscrire</a>
+            <a class="dropdown-item" href="#">Votre compte</a>
+            <a class="dropdown-item" href="#" style="color: #F47735;">Vos commandes</a>
+
+         </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+
+
+<aside class="col-sm-4 mx-auto" style="margin-top:50px;">
+
+<div class="card">
+<article class="card-body">
+	<h4 class="card-title text-center mb-4 mt-1">Inscription</h4>
+	<hr>
+	
+	<form>
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+		<input name="" class="form-control" placeholder="Nom" type="text">
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+		<input name="" class="form-control" placeholder="Prénom" type="text">
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+		<input name="" class="form-control" placeholder="Email or username" type="email">
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+
+
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+		<select class="browser-default custom-select">
+        <option selected="">Votre rôle</option>
+        <option value="1">Êtes-vous vendeur?</option>
+        <option value="2">Êtes-vous acheteur?</option>
+        <option value="3">Three</option>
+      </select>
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+
+
+
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		 </div>
+	    <input class="form-control" placeholder="Mot de passe" type="password">
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+	<div class="form-group">
+	<div class="input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		 </div>
+	    <input class="form-control" placeholder="Mot de passe de confirmation" type="password">
+	</div> <!-- input-group.// -->
+	</div> <!-- form-group// -->
+	<div class="form-group">
+	<button type="submit" class="btn btn-default btn-block" style="background-color: #F47735; color : #fff;">S'inscrire </button>
+	</div> <!-- form-group// -->
+	<p class="text-center"><a href="#" class="btn">Mot de passe oublier?</a></p>
+	</form>
+</article>
+</div> <!-- card.// -->
+
+	</aside> <!-- col.// -->
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<footer class="col-md-12 py-5 bg-dark">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="text-light">Qui sommes nous?</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="text-light">Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="text-light">Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="text-light">About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+        <li><a class="text-muted" href="#">Ipsum Ipsum</a></li>
+        <li><a class="text-muted" href="#">Lorem Lorem</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
+
+<script src="../js/jquery-1.11.1.min.js" ></script>
+      <script>window.jQuery || document.write('<script src="../js/jquery-1.11.1.min.js"><\/script>');</script>
+      <script src="../js/bootstrap.bundle.min.js">
+      </script>
+       <script src="">
+       $('#myCarousel').carousel({
+    interval: 3000,
+    
+        });
+
+           $(document).ready(function() {
+$('.mdb-select').materialSelect();
+});
+      </script>
+
+   
